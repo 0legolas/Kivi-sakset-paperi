@@ -1,0 +1,79 @@
+$main-color: #ad03fc;
+* {
+	margin: 0;
+	padding: 0 ;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  h1 {
+    color: $main-color;
+    font-weight: 400;
+  }
+}
+h2{
+  padding: 30px;
+  color:$main-color;
+  text-align: center;
+}
+.game-interface {
+  display: flex;
+  justify-content: center;
+  .score-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    .your-score, .ai-score, .tie {
+      font-size: 1.2em;
+      span {
+        color:$main-color;
+        font-size: 2em;
+        margin-left:5px;
+
+      }
+    }
+    .resolve {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: $main-color;
+    }
+  }
+  .your-move, .ai-move {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height:250px;
+    img {
+      position: absolute;
+    }
+  }
+}
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  h3 {
+    padding:20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    color:$main-color;
+  }
+  .buttons {
+    img {
+      height:120px;
+      cursor:pointer;
+    }
+  }
+}

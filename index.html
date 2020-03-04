@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<title>Kivi sakset paperi</title>
+		<link rel="icon" href="img/kivi.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i" rel="stylesheet">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+  <header>
+    <h1>Kivi sakset paperi</h1>
+  </header>
+  <h2>Kierroksia pelattu: <span class="round-count">0</span></h2>
+  <div class="game-interface">
+    <div class="your-move">
+      <img id="player-hand" src="img/kivi.png" alt="rock">
+    </div>
+    <div class="score-board">
+      <span class="your-score">Sinun pisteet:
+        <span class="your-wins">0</span>
+      </span>
+      <span class="tie">Tasapeli:
+        <span class="tie-score">0</span>
+      </span>
+      <span class="ai-score">Tietokoneen pisteet:
+        <span class="ai-wins">0</span>
+      </span>
+      <span class="resolve"></span>
+    </div>
+    <div class="ai-move">
+      <img id="ai-hand" src="img/kivi.png" alt="rock">
+    </div>
+  </div>
+  <div class="controller">
+    <h3 class="call-to-action">Tee siirtosi</h3>
+    <div class="buttons">
+      <img src="img/kivi.png" onclick="play('kivi');" alt="rock">
+      <img src="img/sakset.png" onclick="play('sakset');" alt="rock">
+      <img src="img/paperi.png" onclick="play('paperi');" alt="rock">
+    </div>
+  </div>
+</html>

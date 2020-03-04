@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25); }
+  header h1 {
+    color: #ad03fc;
+    font-weight: 400; }
+
+h2 {
+  padding: 30px;
+  color: #ad03fc;
+  text-align: center; }
+
+.game-interface {
+  display: flex;
+  justify-content: center; }
+  .game-interface .score-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px; }
+    .game-interface .score-board .your-score, .game-interface .score-board .ai-score, .game-interface .score-board .tie {
+      font-size: 1.2em; }
+      .game-interface .score-board .your-score span, .game-interface .score-board .ai-score span, .game-interface .score-board .tie span {
+        color: #ad03fc;
+        font-size: 2em;
+        margin-left: 5px; }
+    .game-interface .score-board .resolve {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #ad03fc; }
+  .game-interface .your-move, .game-interface .ai-move {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 250px; }
+    .game-interface .your-move img, .game-interface .ai-move img {
+      position: absolute; }
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .controller h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    color: #ad03fc; }
+  .controller .buttons img {
+    height: 120px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
